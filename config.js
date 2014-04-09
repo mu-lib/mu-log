@@ -3,7 +3,7 @@
  */
 define([
 	"module",
-	"troopjs-utils/merge"
+	"troopjs-util/merge"
 ], function ConfigModule(module, merge) {
 	/**
 	 * Provides configuration for the logging package
