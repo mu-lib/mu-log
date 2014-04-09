@@ -1,0 +1,14 @@
+{
+	"name": "troopjs-log",
+	"version": "0.0.0",
+	"ignore": [
+		"**/.*",
+		"node_modules"
+	],
+	"dependencies": {
+		"troopjs-composer": "~2",
+		"troopjs-utils": "~2",
+		"poly": "~0",
+		"when": "~2"
+	}
+}
