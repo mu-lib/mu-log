@@ -3,7 +3,8 @@
  */
 define([
 	"./methods",
-	"poly/array"
+	"poly/array",
+	"poly/function"
 ], function ConsoleModule(METHODS) {
 	"use strict";
 
@@ -29,9 +30,9 @@ define([
 		var nop = function () {};
 
 		METHODS.forEach(function (method) {
-			me[method] = console[method] || nop;
-		});
+			me[method] = this.call(console[method] || nop, console);
+		}, Function.prototype.bind);
 
 		return me;
-	}).call({}, console || {});
+	}).call({}, ( this || window ).console || {});
 });
