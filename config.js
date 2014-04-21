@@ -9,7 +9,6 @@ define([
 	 * Provides configuration for the logging package
 	 * @class log.config
 	 * @protected
-	 * @static
 	 * @alias feature.config
 	 */
 
