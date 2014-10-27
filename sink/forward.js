@@ -5,7 +5,7 @@ define([
 	"./methods",
 	"../config",
 	"poly/array"
-], function ForwardModule(METHODS, CONF) {
+], function (METHODS, CONF) {
 	"use strict";
 
 	/**

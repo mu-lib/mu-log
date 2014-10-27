@@ -4,7 +4,7 @@
 define([
 	"module",
 	"mu-merge"
-], function ConfigModule(module, merge) {
+], function (module, merge) {
 	/**
 	 * Provides configuration for the logging package
 	 * @class log.config

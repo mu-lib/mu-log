@@ -1,7 +1,7 @@
 /**
  * @license MIT http://troopjs.mit-license.org/
  */
-define([ "./sink/console" ], function LoggerModule(logger) {
+define([ "./sink/console" ], function (logger) {
 	"use strict";
 
 	/**

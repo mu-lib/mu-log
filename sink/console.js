@@ -5,7 +5,7 @@ define([
 	"./methods",
 	"poly/array",
 	"poly/function"
-], function ConsoleModule(METHODS) {
+], function (METHODS) {
 	"use strict";
 
 	/**

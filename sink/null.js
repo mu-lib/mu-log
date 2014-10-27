@@ -4,7 +4,7 @@
 define([
 	"./methods",
 	"poly/array"
-], function NullModule(METHODS) {
+], function (METHODS) {
 	"use strict";
 
 	/**
