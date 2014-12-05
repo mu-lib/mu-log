@@ -9,12 +9,12 @@ define([
 	"use strict";
 
 	/**
-	 * This class implements the {@link log.console} API and can acts like a sink for {@link log.sink.forward}.
+	 * This class implements the {@link log.logger} API.
 	 * @localdoc
-	 * On platforms where the native `console` object doesn't support the full {@link log.console} API,
+	 * On platforms where the native `console` object doesn't support the full {@link log.logger} API,
 	 * this class acts like a polyfill for the missing methods.
-	 * @class log.sink.console
-	 * @implement log.console
+	 * @class log.console
+	 * @implement log.logger
 	 * @singleton
 	 * @alias feature.logger
 	 */
