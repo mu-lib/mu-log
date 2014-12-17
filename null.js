@@ -9,9 +9,8 @@ define([
 
 	/**
 	 * @class log.null
-	 * @implement log.logger
+	 * @implement log.console
 	 * @singleton
-	 * @inheritdoc log.console
 	 * @localdoc
 	 * This class maps every log method to a [nop](https://en.wikipedia.org/wiki/NOP) function,
 	 * effectively suppressing all logging.
