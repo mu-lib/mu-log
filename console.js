@@ -1,5 +1,5 @@
 /**
- * @license MIT http://troopjs.mit-license.org/
+ * @license MIT http://mu-lib.mit-license.org/
  */
 define([
 	"./methods",
@@ -123,8 +123,8 @@ define([
 	 * On platforms where the native `console` object doesn't support the full {@link log.console} API,
 	 * this class acts like a polyfill for the missing methods.
 	 *
-	 * @class log.console
-	 * @implement log.console
+	 * @class mu.log.console
+	 * @implement mu.log.console
 	 * @interface
 	 * @singleton
 	 * @alias feature.logger

@@ -1,5 +1,5 @@
 /**
- * @license MIT http://troopjs.mit-license.org/
+ * @license MIT http://mu-lib.mit-license.org/
  */
 define([
 	"./methods",
@@ -8,8 +8,8 @@ define([
 	"use strict";
 
 	/**
-	 * @class log.null
-	 * @implement log.console
+	 * @class mu.log.null
+	 * @implement mu.log.console
 	 * @singleton
 	 * @localdoc
 	 * This class maps every log method to a [nop](https://en.wikipedia.org/wiki/NOP) function,
