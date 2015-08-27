@@ -209,10 +209,25 @@ define([
 	return (function (console) {
 		var me = this;
 		var nop = function () {};
+		var bind = Function.prototype.bind;
+
+		// Check if console methods can be safely wrapped for IE8 and below
+		if (window.console && typeof console.assert === 'object') {
+			try {
+				bind.call(console.assert, console)(1);
+			} catch (er) {
+				bind = function bindToConsole(context) {
+					var fn = this;
+					return function consoleFnWrapper() {
+						return Function.prototype.apply.call(fn, context, arguments);
+					};
+				};
+			}
+		}
 
 		METHODS.forEach(function (method) {
-			me[method] = this.call(console[method] || nop, console);
-		}, Function.prototype.bind);
+			me[method] = bind.call(console[method] || nop, console);
+		});
 
 		return me;
 	}).call({}, ( this || window ).console || {});
